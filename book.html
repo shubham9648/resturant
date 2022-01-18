@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="head">
+           
+            <h1 class="nav-text">Sanjha chulha</h1>
+         
+    </header>
+    <section class="contents">
+        <div class="paneer">
+            <img src="paneer.jpg" alt="panner image" class="image">
+            <h1 class="menu-text">Tasty indian Paneer</h1>
+            <p class="price">160 Rs</p>
+            <div class="count">
+                <a href="#" class="minus" onclick="decremented('check')">-</a>
+                <!-- <h3 class="text">011</h3> -->
+                <input type="text" class="text" value="0" id="check">
+                <a href="#" class="plus" id="addition" onclick="incremented('check')">+</a>
+            </div>
+        </div>
+        <div class="paneer">
+            <img src="chicken curry.jpeg" alt="chicken curry image" class="image">
+            <h1 class="menu-text">Chicken Curry </h1>
+             <p class="price">200 Rs</p>
+            <div class="count">
+                <a href="#" class="minus" onclick="decremented('check1')">-</a>
+                <!-- <h3 class="text">0</h3> -->
+                <input type="text" class="text" value="0" id="check1">
+                <a href="#" class="plus" onclick="incremented('check1')">+</a>
+            </div>
+        </div>
+        <div class="paneer">
+            <img src="fish curry.jpg" alt="fish curry image" class="image">
+            <h1 class="menu-text">Tasty Fish Curry</h1>
+            <p class="price">160 Rs</p>
+            <div class="count">
+                <a href="#" class="minus" onclick="decremented('check2')">-</a>
+                <!-- <h3 class="text">0</h3> -->
+                <input type="text" class="text" value="0" id="check2">
+                <a href="#" class="plus" onclick="incremented('check2')">+</a>
+            </div>
+        </div>
+        <div class="paneer">
+            <img src="chola bhatura.jpg" alt="chola bhatura image" class="image">
+            <h1 class="menu-text">Tasty indian Chole Bhature</h1>
+            <p class="price">80 Rs</p>
+            <div class="count">
+                <a href="#" class="minus" onclick="decremented('check3')">-</a>
+                <!-- <h3 class="text">0</h3> -->
+                <input type="text" class="text" value="0" id="check3">
+                <a href="#" class="plus" onclick="incremented('check3')">+</a>
+            </div>
+        </div>
+        <div class="paneer">
+            <img src="dal makhni.jpg" alt="panner image" class="image">
+            <h1 class="menu-text">Tasty indian Paneer</h1>
+            <p class="price">200 Rs</p>
+            <div class="count">
+                <a href="#" class="minus" onclick="decremented('check4')">-</a>
+                <!-- <h3 class="text">0</h3> -->
+                <input type="text" class="text" value="0" id="check4">
+                <a href="#" class="plus" onclick="incremented('check4')">+</a>
+            </div>
+        </div>
+        <div class="paneer">
+            <img src="mutton curry.jpg" alt="mutton curry image" class="image">
+            <h1 class="menu-text">Tasty Mutton Curry</h1>
+            <p class="price">260 Rs</p>
+            <div class="count">
+                <a href="#" class="minus" onclick="decremented('check5')">-</a>
+                <!-- <h3 class="text">0</h3> -->
+                <input type="text" class="text" value="0" id="check5">
+                <a href="#" class="plus" onclick="incremented('check5')">+</a>
+            </div>
+        </div>
+        <div class="paneer">
+            <img src="fried rice.png" alt="fried rice image" class="image">
+            <h1 class="menu-text">Tasty indian Fried Rice</h1>
+            <p class="price">60 Rs</p>
+            <div class="count">
+                <a href="#" class="minus" onclick="decremented('check6')">-</a>
+                <!-- <h3 class="text">0</h3> -->
+                <input type="text" class="text" value="0" id="check6">
+                <a href="#" class="plus" onclick="incremented('check6')">+</a>
+            </div>
+        </div>
+        <div class="paneer">
+            <img src="burger.jpg" alt="burger image" class="image">
+            <h1 class="menu-text">Tasty Burger</h1>
+            <p class="price">60 Rs</p>
+            <div class="count">
+                <a href="#" class="minus" onclick="decremented('check7')">-</a>
+                <!-- <h3 class="text">0</h3> -->
+                <input type="text" class="text" value="0" id="check7">
+                <a href="#" class="plus" onclick="incremented('check7')">+</a>
+            </div>
+        </div>
+        <div class="paneer">
+            <img src="chilli potato.jpg" alt="chilli potato image" class="image">
+            <h1 class="menu-text">Tasty Chilli Potato</h1>
+            <p class="price">100 Rs</p>
+            <div class="count">
+                <a href="#" class="minus" onclick="decremented('check8')">-</a>
+                <!-- <h3 class="text">0</h3> -->
+                <input type="text" class="text" value="0" id="check8">
+                <a href="#" class="plus" onclick="incremented('check8')">+</a>
+            </div>
+        </div>
+        <div class="paneer">
+            <img src="noodles.jpg" alt="noodles image" class="image">
+            <h1 class="menu-text">Tasty Chinese Noodles</h1>
+            <p class="price">40 Rs</p>
+            <div class="count">
+                <a href="#" class="minus" onclick="incremented('check9')">-</a>
+                <!-- <h3 class="text">0</h3> -->
+                <input type="text" class="text" value="0" id="check9">
+                <a href="#" class="plus" onclick="incremented('check9')">+</a>
+            </div>
+        </div>
+        <div class="paneer">
+            <img src="pizza.jpg" alt="pizza image" class="image">
+            <h1 class="menu-text">Tasty Paneer Pizza</h1>
+            <p class="price">160 Rs</p>
+            <div class="count">
+                <a href="#" class="minus" onclick="decremented('check10')">-</a>
+                <!-- <h3 class="text">0</h3> -->
+                <input type="text" class="text" value="0" id="check10">
+                <a href="#" class="plus" onclick="check10('check10')">+</a>
+            </div>
+        </div>
+        <div class="paneer">
+            <img src="sabzi.jpg" alt="sabzi image" class="image">
+            <h1 class="menu-text">Tasty indian Green Vegetables</h1>
+            <p class="price">160 Rs</p>
+            <div class="count">
+                <a href="#" class="minus" onclick="decremented('check11')">-</a>
+                <!-- <h3 class="text">0</h3> -->
+                <input type="text" class="text" value="0" id="check11">
+                <a href="#" class="plus" onclick="incremented('check11')">+</a>
+            </div>
+        </div>
+    </section>
+    <div class="total-btn">
+        <a href="#" id="total-quantity">Grand Total: Rs. 00</a>
+    
+    </div>
+    <script src="script.js"></script> 
+</body>
+
+</html>
