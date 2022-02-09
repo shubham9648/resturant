@@ -66,7 +66,7 @@ console.log(x.innerText)
          element.style.width = "10rem"
         //  element.style.flexDirection = "column"
      })
-     dots.style.display = "flex"
+     dots.style.display = "none"
 
  });
 
