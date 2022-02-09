@@ -2,9 +2,10 @@ const incrementBtn = document.querySelectorAll(".plus");
 
 const decrementBtn = document.querySelectorAll(".minus");
 var initialCount = 0;
-
-
-
+// var x = document.getElementById("addition")
+// console.log(x.parentElement.nodeName)
+let x = document.getElementsByClassName("plus");
+console.log(x.innerText)
 
 
 // for(var i=0;i<incrementBtn.length; i++){
@@ -15,16 +16,31 @@ var initialCount = 0;
     incdec.value = 0;   
     initialCount++;
         if(countDisplay.value >= 5){
-            countDisplay.value = 5;
+            countDisplay.value = 0;
             alert("over limit")
+            
         }
         else{
         countDisplay.value = initialCount;
+        
         }
     }
+    // var price = document.querySelectorAll('.price')
+    // price.forEach(element =>{
+    //     console.log(element)
+    // })
+    //  var arr = [parseInt(price.innerText)]
+    // console.log(arr)
+// var text = document.getElementsByClassName('text')
+// price.forEach(element =>{
 
+     
+// totalQuantity.value = parseInt(element.innerText)*initialCount;
+//         console.log(element.innerText)
+   
      const decremented = (incdec) => {
         const countDisplay = document.getElementById(incdec);
+        incdec.value = 0
          initialCount--;
          if(countDisplay.value <=0){
              countDisplay.value = 0;
@@ -33,6 +49,32 @@ var initialCount = 0;
             countDisplay.value = initialCount;
          }
 }
+// const sayhi = () =>{
+//     alert("hii")
+// }
+ var dots =  document.getElementById("dots");
+ const buttons = document.querySelectorAll(".nav-btns");
+ buttons.forEach(element =>{
+     console.log(element.innerText)
+ })
+ 
+ dots.addEventListener("click",()=>{
+     
+   
+    buttons.forEach(element =>{
+         element.style.display = "block";
+         element.style.width = "10rem"
+        //  element.style.flexDirection = "column"
+     })
+     dots.style.display = "flex"
+
+ });
+
+
+
+
+
+
 // var totalQuantity = document.getElementById('total-quantity');
 // // console.log(totalQuantity.innerText)
 //  var price = document.querySelectorAll(".price")
@@ -46,7 +88,7 @@ var initialCount = 0;
 //  var updatedPrice = parseFloat(totalQuantity.innerText.replace(` Grand Total Rs.`, ' '))
  
 //  console.log(updatedPrice)
-
+// const dot = document.
 
 
 

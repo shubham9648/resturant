@@ -19,10 +19,10 @@
             <h1 class="menu-text">Tasty indian Paneer</h1>
             <p class="price">160 Rs</p>
             <div class="count">
-                <a href="#" class="minus" onclick="decremented('check')">-</a>
+                <button class="minus" onclick="decremented('check')">-</button>
                 <!-- <h3 class="text">011</h3> -->
-                <input type="text" class="text" value="0" id="check">
-                <a href="#" class="plus" id="addition" onclick="incremented('check')">+</a>
+                <input type="text" class="text" value="0" id="check" placeholder="Total">
+                <button class="plus" id="addition" onclick="incremented('check')">+</button>
             </div>
         </div>
         <div class="paneer">
@@ -30,10 +30,10 @@
             <h1 class="menu-text">Chicken Curry </h1>
              <p class="price">200 Rs</p>
             <div class="count">
-                <a href="#" class="minus" onclick="decremented('check1')">-</a>
+            <button class="minus" onclick="decremented('check1')">-</button>
                 <!-- <h3 class="text">0</h3> -->
                 <input type="text" class="text" value="0" id="check1">
-                <a href="#" class="plus" onclick="incremented('check1')">+</a>
+                <button class="plus" onclick="incremented('check1')">+</button>
             </div>
         </div>
         <div class="paneer">
@@ -41,10 +41,10 @@
             <h1 class="menu-text">Tasty Fish Curry</h1>
             <p class="price">160 Rs</p>
             <div class="count">
-                <a href="#" class="minus" onclick="decremented('check2')">-</a>
+                <button class="minus" onclick="decremented('check2')">-</button>
                 <!-- <h3 class="text">0</h3> -->
                 <input type="text" class="text" value="0" id="check2">
-                <a href="#" class="plus" onclick="incremented('check2')">+</a>
+                <button class="plus" onclick="incremented('check2')">+</button>
             </div>
         </div>
         <div class="paneer">
@@ -52,10 +52,10 @@
             <h1 class="menu-text">Tasty indian Chole Bhature</h1>
             <p class="price">80 Rs</p>
             <div class="count">
-                <a href="#" class="minus" onclick="decremented('check3')">-</a>
+                <button class="minus" onclick="decremented('check3')">-</button>
                 <!-- <h3 class="text">0</h3> -->
                 <input type="text" class="text" value="0" id="check3">
-                <a href="#" class="plus" onclick="incremented('check3')">+</a>
+                <button class="plus" onclick="incremented('check3')">+</button>
             </div>
         </div>
         <div class="paneer">
@@ -63,10 +63,10 @@
             <h1 class="menu-text">Tasty indian Paneer</h1>
             <p class="price">200 Rs</p>
             <div class="count">
-                <a href="#" class="minus" onclick="decremented('check4')">-</a>
+                <button class="minus" onclick="decremented('check4')">-</button>
                 <!-- <h3 class="text">0</h3> -->
                 <input type="text" class="text" value="0" id="check4">
-                <a href="#" class="plus" onclick="incremented('check4')">+</a>
+                <button class="plus" onclick="incremented('check4')">+</button>
             </div>
         </div>
         <div class="paneer">
@@ -74,10 +74,10 @@
             <h1 class="menu-text">Tasty Mutton Curry</h1>
             <p class="price">260 Rs</p>
             <div class="count">
-                <a href="#" class="minus" onclick="decremented('check5')">-</a>
+                <button class="minus" onclick="decremented('check5')">-</button>
                 <!-- <h3 class="text">0</h3> -->
                 <input type="text" class="text" value="0" id="check5">
-                <a href="#" class="plus" onclick="incremented('check5')">+</a>
+                <button class="plus" onclick="incremented('check5')">+</button>
             </div>
         </div>
         <div class="paneer">
@@ -85,10 +85,10 @@
             <h1 class="menu-text">Tasty indian Fried Rice</h1>
             <p class="price">60 Rs</p>
             <div class="count">
-                <a href="#" class="minus" onclick="decremented('check6')">-</a>
+                <button class="minus" onclick="decremented('check6')">-</button>
                 <!-- <h3 class="text">0</h3> -->
                 <input type="text" class="text" value="0" id="check6">
-                <a href="#" class="plus" onclick="incremented('check6')">+</a>
+                <button class="plus" onclick="incremented('check6')">+</button>
             </div>
         </div>
         <div class="paneer">
@@ -96,10 +96,10 @@
             <h1 class="menu-text">Tasty Burger</h1>
             <p class="price">60 Rs</p>
             <div class="count">
-                <a href="#" class="minus" onclick="decremented('check7')">-</a>
+                <button class="minus" onclick="decremented('check7')">-</button>
                 <!-- <h3 class="text">0</h3> -->
                 <input type="text" class="text" value="0" id="check7">
-                <a href="#" class="plus" onclick="incremented('check7')">+</a>
+                <button class="plus" onclick="incremented('check7')">+</button>
             </div>
         </div>
         <div class="paneer">
@@ -107,21 +107,21 @@
             <h1 class="menu-text">Tasty Chilli Potato</h1>
             <p class="price">100 Rs</p>
             <div class="count">
-                <a href="#" class="minus" onclick="decremented('check8')">-</a>
+                <button class="minus" onclick="decremented('check8')">-</button>
                 <!-- <h3 class="text">0</h3> -->
                 <input type="text" class="text" value="0" id="check8">
-                <a href="#" class="plus" onclick="incremented('check8')">+</a>
+                <button class="plus" onclick="incremented('check8')">+</button>
             </div>
         </div>
         <div class="paneer">
             <img src="noodles.jpg" alt="noodles image" class="image">
             <h1 class="menu-text">Tasty Chinese Noodles</h1>
-            <p class="price">40 Rs</p>
+            <p class="price" id="rupee">40 Rs</p>
             <div class="count">
-                <a href="#" class="minus" onclick="incremented('check9')">-</a>
+                <button class="minus" onclick="incremented('check9')">-</button>
                 <!-- <h3 class="text">0</h3> -->
                 <input type="text" class="text" value="0" id="check9">
-                <a href="#" class="plus" onclick="incremented('check9')">+</a>
+                <button class="plus" onclick="incremented('check9'),incrementedBy('rupee')">+</button>
             </div>
         </div>
         <div class="paneer">
@@ -129,10 +129,10 @@
             <h1 class="menu-text">Tasty Paneer Pizza</h1>
             <p class="price">160 Rs</p>
             <div class="count">
-                <a href="#" class="minus" onclick="decremented('check10')">-</a>
+                <button class="minus" onclick="decremented('check10')">-</button>
                 <!-- <h3 class="text">0</h3> -->
                 <input type="text" class="text" value="0" id="check10">
-                <a href="#" class="plus" onclick="check10('check10')">+</a>
+                <button class="plus" onclick="check10('check10'),incrementedBy('total')">+</button>
             </div>
         </div>
         <div class="paneer">
@@ -140,15 +140,19 @@
             <h1 class="menu-text">Tasty indian Green Vegetables</h1>
             <p class="price">160 Rs</p>
             <div class="count">
-                <a href="#" class="minus" onclick="decremented('check11')">-</a>
+                <button class="minus" onclick="decremented('check11','total'),incrementedBy('total')">-</button>
                 <!-- <h3 class="text">0</h3> -->
                 <input type="text" class="text" value="0" id="check11">
-                <a href="#" class="plus" onclick="incremented('check11')">+</a>
+                <button class="plus" onclick="incremented('check11'),incrementedBy('total')">+</button>
             </div>
         </div>
     </section>
     <div class="total-btn">
-        <a href="#" id="total-quantity">Grand Total: Rs. 00</a>
+       <span id="total-quantity">
+           <h1 id="grand-text">Grand Total:</h1>
+           <input type="text" id="total" value="0">
+           <a href="submit.html" id="index">Submit</a>
+       </span>
     
     </div>
     <script src="script.js"></script> 

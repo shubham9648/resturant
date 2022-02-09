@@ -1,8 +1,8 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: cursive;
-    background: linear-gradient(black ,transparent)
+    font-family:Arial, Helvetica, sans-serif;
+background: linear-gradient(black ,transparent)    
 }
 header{
     display: flex;
@@ -15,6 +15,10 @@ header{
     width: 100%;
    
   }
+  .nav-btns{
+      text-decoration: none;
+      color: white;
+  }
 h1{
     color: white;
 }
@@ -25,6 +29,16 @@ h1{
      border: none;
      color: white;
      cursor: pointer; 
+}
+#dots{
+    background-color: white;
+     display: none;
+     width: 3rem;
+    height: 3rem; 
+    border: 2px solid cyan;
+    background-color: cyan;
+    border-radius: 40px;
+    margin-top: 1rem;
 }
 .nav-bars{
    
@@ -121,23 +135,26 @@ h1{
 }
 .minus{
     text-decoration: none;
-    font-size: 5rem;
+    align-items: center;
     color: black;
-    margin-bottom:1rem;
-    padding-right: 1rem; 
-    
-    
+    font-size: 1.5rem;
+    border: 1px solid black;
+    width: 1.6rem;
+    /* margin-bottom:1rem; */
+    /* padding-right: 1rem;  */
+      
 }
 .text{
     width: 30px; 
-    height: 20px;
+    height: 27px;
 }
 .plus{
     text-decoration: none;
-    font-size: 4rem;
+     font-size: 1.5rem; 
     color: black;
-    margin-bottom:0.8rem;
-    padding-left: 1rem;
+    border: 1px solid black;
+    /* margin-bottom:0.8rem; */
+    /* padding-left: 1rem; */
 }
 .menu-text{
     color: black;
@@ -152,12 +169,95 @@ h1{
 }
 
 #total-quantity{
-    display: inline-block;
+    display: flex;
     text-decoration: none;
-    font-size: 2rem;
+   align-items: center;
     color: black;
     border: 2px solid red;
-    border: none;
-    background: linear-gradient(red,green);
+    
+    
     padding-right: 5rem;
+}
+#grand-text{
+    color: blueviolet;
+}
+#total{
+    
+    height: 2rem;
+}
+#index{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    border: 2px solid red;
+    background-color: red;
+}
+
+.total-quantity{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+@media screen and (max-width:480px){
+   .nav-bar{
+       /* margin-top: 2rem; */
+       display: flex;
+       flex-wrap: wrap;
+   }
+   
+   .nav-bar h1{
+        font-size: 1.5rem;
+   }
+   #dots{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+     position: relative;
+     left: 10rem;
+     bottom: 4.5rem;
+     cursor: pointer;
+}
+   .nav-bar .nav-btns{
+       display: none;
+   }
+   .nav-bar .nav-bars{
+       position: absolute;
+       margin-right: 0;
+       margin-top: 1.2rem;
+       display: none;
+       
+}
+
+    
+
+   .nav-bar .nav-bars .nav-btn{
+       font-size: 0.8rem;
+   }
+   .bda-dabba{
+       margin-top: 5rem;
+   }
+    .img-element .first{
+       width: 100%;
+       
+   }
+   #main-text h1{
+       color: black;
+   }
+   .image{
+       width: 100%;
+   }
+   .price{
+       color: white;
+   }
+   .menu-text{
+       color: antiquewhite;
+   }
+   .contents{
+       background-color: black;
+   }
+   #dots{
+              
+   }
 }
