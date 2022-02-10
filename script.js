@@ -7,7 +7,9 @@ var initialCount = 0;
 let x = document.getElementsByClassName("plus");
 console.log(x.innerText)
 
-
+var totalQuant = document.getElementById("total")
+         const  price = document.querySelectorAll('.price')
+     
 // for(var i=0;i<incrementBtn.length; i++){
 //     incrementBtn[i].addEventListener("click",incremented() )
 // }
@@ -22,15 +24,16 @@ console.log(x.innerText)
         }
         else{
         countDisplay.value = initialCount;
+        price.forEach(element =>{
+            totalQuant.value = parseInt(element.innerText)*initialCount;
+            
+         })
         
         }
     }
-    // var price = document.querySelectorAll('.price')
-    // price.forEach(element =>{
-    //     console.log(element)
-    // })
-    //  var arr = [parseInt(price.innerText)]
-    // console.log(arr)
+    
+     
+      
 // var text = document.getElementsByClassName('text')
 // price.forEach(element =>{
 
@@ -40,13 +43,18 @@ console.log(x.innerText)
    
      const decremented = (incdec) => {
         const countDisplay = document.getElementById(incdec);
-        incdec.value = 0
+        // incdec.value = 0;
+
          initialCount--;
          if(countDisplay.value <=0){
-             countDisplay.value = 0;
+             countDisplay.value = initialCount;
              alert("order item does not a negative value")
          } else{
             countDisplay.value = initialCount;
+            price.forEach(element =>{
+                totalQuant.value = parseInt(element.innerText)*initialCount;
+                
+             })
          }
 }
 // const sayhi = () =>{
@@ -54,9 +62,9 @@ console.log(x.innerText)
 // }
  var dots =  document.getElementById("dots");
  const buttons = document.querySelectorAll(".nav-btns");
- buttons.forEach(element =>{
-     console.log(element.innerText)
- })
+//  buttons.forEach(element =>{
+//      console.log(element.innerText)
+//  })
  
  dots.addEventListener("click",()=>{
      
