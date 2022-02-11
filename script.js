@@ -28,7 +28,6 @@ var totalQuant = document.getElementById("total")
             totalQuant.value = parseInt(element.innerText)*initialCount;
             
          })
-        
         }
     }
     
@@ -62,20 +61,33 @@ var totalQuant = document.getElementById("total")
 // }
  var dots =  document.getElementById("dots");
  const buttons = document.querySelectorAll(".nav-btns");
+const hamberger = document.getElementById("humberger")
 //  buttons.forEach(element =>{
 //      console.log(element.innerText)
 //  })
  
  dots.addEventListener("click",()=>{
      
-   
+//    dots.style.position = "fixed";
+//    dots.style.marginLeft = "0rem"
     buttons.forEach(element =>{
-         element.style.display = "block";
-         element.style.width = "10rem"
-        //  element.style.flexDirection = "column"
+        if(element.style.display === "block"){
+         element.style.display = "none";
+        
+        }
+        else{
+            element.style.display = "block";
+            // element.style.marginTop = "2rem"
+           element.style.width = "25rem";
+        }
      })
-     dots.style.display = "none"
-
+//  if(hamberger.style.display === "flex"){
+//     hamberger.style.display = "none";
+//  }
+//  else{
+//     hamberger.style.display = "flex"
+//  }
+    
  });
 
 

@@ -84,7 +84,8 @@ h1{
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    background: linear-gradient(red,transparent);
+     background: linear-gradient(skyBlue,transparent); 
+    /* background-color: skyblue; */
 }
 .nav-text{
     display: flex;
@@ -166,7 +167,10 @@ h1{
     position: fixed;
     bottom: 0;
     right: 20rem;
-    
+    border: 2px solid red;
+    border: none;
+    background-color: aqua;
+    border-radius: 12px;
 }
 
 #total-quantity{
@@ -174,7 +178,7 @@ h1{
     text-decoration: none;
    align-items: center;
     color: black;
-    border: 2px solid red;
+    
     
     
     padding-right: 5rem;
@@ -190,8 +194,8 @@ h1{
     text-decoration: none;
     font-size: 1.5rem;
     color: white;
-    border: 2px solid red;
-    background-color: red;
+     border: 2px solid red;
+    background-color: red; 
 }
 
 .total-quantity{
@@ -258,7 +262,28 @@ h1{
    .contents{
        background-color: black;
    }
+   /* .hamburger{
+        display: flex;
+       flex-direction: column; 
+
+   } */
+   .nav-bar{
+       display: flex;
+       align-items: center;
+      
+       /* justify-content: end; */
+   }
    #dots{
-              
+        display: block;
+        /* flex-direction: column; */
+        position: fixed;
+        top: 0;
+        margin-left: 10rem;
+        /* right: 10rem; */
+   }
+   .total-btn{
+   position: fixed;
+   right: 0;
+   width: 100%; 
    }
 }
