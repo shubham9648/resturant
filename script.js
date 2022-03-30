@@ -55,10 +55,6 @@ var totalQuant = document.getElementById("total")
             initialCount--;
             countDisplay.value = initialCount;
             
-            // price.forEach(element =>{
-            //     totalQuant.value = parseInt(element.innerText)*initialCount;
-                
-            //  })
              totalQuant.value = arr*initialCount;
             
          }
@@ -102,30 +98,3 @@ const hamberger = document.getElementById("humberger")
 
 
 
-// var totalQuantity = document.getElementById('total-quantity');
-// // console.log(totalQuantity.innerText)
-//  var price = document.querySelectorAll(".price")
-//  var initialPrice = 0;
-//  price.forEach(element =>{
-//      initialPrice = initialCount*element.value 
-//     //  console.log(initialPrice)
-//  })
-
-
-//  var updatedPrice = parseFloat(totalQuantity.innerText.replace(` Grand Total Rs.`, ' '))
- 
-//  console.log(updatedPrice)
-// const dot = document.
-
-
-
-// console.log(incrementBtn);
-// const initialStage = 0;
-
-// let incrementBtn1 = () =>{
-//     alert("snkit");
-//     }
-
-// incrementBtn.addEventListener("click",incrementBtn1);
-
-    
