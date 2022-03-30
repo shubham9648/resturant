@@ -5,7 +5,7 @@ var initialCount = 0;
 // var x = document.getElementById("addition")
 // console.log(x.parentElement.nodeName)
 let x = document.getElementsByClassName("plus");
-console.log(x.innerText)
+
 
 var totalQuant = document.getElementById("total")
          const  price = document.querySelectorAll('.price')
@@ -13,22 +13,25 @@ var totalQuant = document.getElementById("total")
 // for(var i=0;i<incrementBtn.length; i++){
 //     incrementBtn[i].addEventListener("click",incremented() )
 // }
+  const arr = 120;
   const incremented =  (incdec)=>{
     const countDisplay = document.getElementById(incdec);
+    
     incdec.value = 0;   
-    initialCount++;
+    
         if(countDisplay.value >= 5){
-            countDisplay.value = 0;
-            alert("over limit")
-            
+            initialCount = 0;
+            alert("over limit");   
         }
         else{
         countDisplay.value = initialCount;
-        price.forEach(element =>{
-            totalQuant.value = parseInt(element.innerText)*initialCount;
-            
-         })
+        initialCount++;
+        // price.forEach(element =>{
+        //     totalQuant.value = parseInt(element.innerText)*initialCount;
+        //  })
+         totalQuant.value = arr*initialCount;
         }
+        
     }
     
      
@@ -39,21 +42,25 @@ var totalQuant = document.getElementById("total")
      
 // totalQuantity.value = parseInt(element.innerText)*initialCount;
 //         console.log(element.innerText)
-   
+     
      const decremented = (incdec) => {
         const countDisplay = document.getElementById(incdec);
         // incdec.value = 0;
 
-         initialCount--;
+         
          if(countDisplay.value <=0){
-             countDisplay.value = initialCount;
+             initialCount = 0;
              alert("order item does not a negative value")
          } else{
+            initialCount--;
             countDisplay.value = initialCount;
-            price.forEach(element =>{
-                totalQuant.value = parseInt(element.innerText)*initialCount;
+            
+            // price.forEach(element =>{
+            //     totalQuant.value = parseInt(element.innerText)*initialCount;
                 
-             })
+            //  })
+             totalQuant.value = arr*initialCount;
+            
          }
 }
 // const sayhi = () =>{
